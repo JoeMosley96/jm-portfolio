@@ -12,6 +12,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    /* line-height:22px; */
 }
 
 html{
@@ -228,8 +229,12 @@ section{
 /* ICONS */
 .icon{
     cursor: pointer;
-    height: 2rem
+    width: 2rem;
+    /* height: 2rem; */
+    filter: grayscale(100%);
+    /* border: black solid 2px */
 }
+
 
 /* BUTTONS */
 .btn-container{
@@ -394,7 +399,19 @@ article .icon{
 .project-btn{
     color: black;
     border-color: rgb(163, 163, 163);
+    width: 7rem;
 }
+
+.thumbnail-container{
+    display: flex;
+    text-align:initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+    margin-bottom: 1rem
+}
+
 
 /* CONTACT */
 #contact{
@@ -433,8 +450,16 @@ article .icon{
 }
 
 .email-icon{
+    cursor: pointer;
     height: 2.5rem
 }
+
+
+/* br{
+    display: block;
+    margin: 10px 0;
+} */
+ 
 
 /* FOOTER SECTION */
 
