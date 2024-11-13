@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="mediaqueries.css"/>
 
 </head>
-<body>
+<body class="whole">
     <nav id="desktop-nav">
         <div class="logo">Joe Mosley</div>
         <div>
             <ul class="nav-links">
-                <!-- <li><a href="#about">About</a></li> -->
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -29,8 +29,8 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <!-- <li><a href="#about" onclick="toggleMenu()">About</a></li> -->
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -46,7 +46,7 @@
             <h1 class="title">Joe Mosley</h1>
             <p class="section__text__p2">Junior Software Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/JM CV.pdf')"">Download CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Joe Mosley CV.pdf')"">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href=('#contact')"">Contact Info</button>
             </div>
             <div id="socials-container">
@@ -59,55 +59,49 @@
             </div>
         </div>
     </section>
-    <!-- <section id="about">
+    <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img 
-                src="./assets/about-pic.png"
-                alt="Profile Picture"
-                class="about-pic"
-                />
-            </div>
-            
             <div class="about-details-container">
+                
+                <div class="text-container">
+                        <p style="margin-bottom:0.7rem">I am a hard working and analytically driven person looking to kick start my career by making the exciting move into software development.  </p>
+                        <p style="margin-bottom:0.7rem">
+                        In my previous role as an acoustic consultant and in my year in industry at a large chemical plant, I had the opportunity to design and implement automated systems for the improvement of working practices and I always found this aspect of my work very satisfying. </p>
+                        <p>
+                        I chose to attend the Northcoders Software Development Bootcamp because I wanted this to be a key part of the next stage of my career. Attending the course has been eye-opening and has given me the confidence to apply my skills and experience to other sectors. </p>
+                    </div>
                 <div class="about-containers">
                     <div class="details-container">
-                        
                             <img src="./assets/experience.png" alt="experience icon" class="icon"/>
-                            <h3>Experience</h3>
+                            <h3>Work Experience</h3>
                             <br/>
-                            <p>Software Development Bootcamp <br /><span class="bold_text">
-                                Northcoders
-                            </span></p>
-                            <br/>
-                            <p>Acoustic Consultant<br /><span class="bold_text">
+                            <div class="details-subcontainer">
+                                <p style="min-width:48%; margin-bottom:1rem; margin-left:1rem; margin-right:1rem">Software Development Bootcamp <br /><span class="bold_text">
+                                    Northcoders
+                                </span></p>
+                                <p style="min-width:48%">Acoustic Consultant<br /><span class="bold_text">
                                 ADT
                             </span></p>
-
+                        </div>
+                          
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="experience icon" class="icon"/>
                         <h3>Education</h3>
                         <br/>
-                        <p>M.Eng Mechanical Engineering (1st Class)<br /> <span class="bold_text">University of Leeds</span></p>
-                        <br/>
-                        <p>A Levels - A*AA (Economics, Physics, Maths)</p>
-                        <span class="bold_text">Greenhead College</span></p>
-                    </div>
+                        <div class="details-subcontainer">
+                            <p style="min-width:45%; margin-bottom:1rem; margin-left:1rem; margin-right:1rem">M.Eng Mechanical Engineering (1st Class)<br /> <span class="bold_text">University of Leeds</span></p>
+                            <p style="min-width:45%">A Levels - A*AA (Economics, Physics, Maths)<br/><span class="bold_text">Greenhead College</span></p>
+                        </div>
+                        </div>
                 </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa voluptates delectus nemo sapiente est illo ipsa adipisci numquam sequi harum perspiciatis officia necessitatibus saepe, accusamus labore ab pariatur! Rerum?</p>
-                </div>
-
             </div>
-        </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-    </section> -->
+    </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Technical Skills</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
@@ -116,77 +110,69 @@
                         <article>
                             <img 
                             src="./assets/tech/html2.png" alt="Experience icon"
-                            class="icon"
-                            />
+                            class="smallicon margin-right"      />
                             <div>
-                                <h3>HTML</h3>
+                                <p class="bold_text">HTML</p>
                             </div>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/css.svg" alt="Experience icon"
-                            class="icon"
-                            />
+                            class="smallicon margin-right"      />
                             <div>
-                                <h3>CSS</h3>
+                                <p class="bold_text">CSS</p>
                             </div>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/tailwind.svg" alt="Experience icon"
-                            class="icon"
-                            />
+                            class="smallicon margin-right"      />
                             <div>
-                                <h3>Tailwind CSS</h3>
+                                <p class="bold_text">Tailwind CSS</p>
                             </div>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/react.svg" alt="Experience icon"
-                            class="icon"
-                            />
+                            class="smallicon margin-right"      />
                             <div>
-                                <h3>React</h3>
+                                <p class="bold_text">React</p>
                             </div>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/react.svg" alt="Experience icon"
-                            class="icon"
-                            />
+                            class="smallicon margin-right"      />
                             <div>
-                                <h3>React Native</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/tech/javascript3.png" alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
+                                <p class="bold_text">React Native</p>
                             </div>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/expo.svg"
                              alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Expo Go</h3>
+                             class="smallicon margin-right"      />
+                             <div>
+                                <p class="bold_text">Expo Go</p>
                             </div>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/lighthouse.png"
                              alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Lighthouse</h3>
+                             class="smallicon margin-right"      />
+                             <div>
+                                <p class="bold_text">Lighthouse</p>
                             </div>
+                        </article>
+                        <article>
+                            <img
+                                src = "./assets/tech/bootstrap.svg"
+                                alt="Experience icon"
+                                class="smallicon margin-right"      />
+                                <div>
+                                    <p class="bold_text">Bootstrap</p>
+                                </div>
                         </article>
                     </div>
 
@@ -196,62 +182,150 @@
                     <div class="article-container">
                         <article>
                             <img 
+                            src="./assets/tech/sql.svg" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">SQL</p>
+                        </article>
+                        <article>
+                            <img 
                             src="./assets/tech/postgresql.svg" alt="Experience icon"
-                            class="icon"
-                            />
-                             <h3>PostgreSQL</h3>
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">PostgreSQL</p>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/nodejs.png" alt="Experience icon"
-                            class="icon"
-                            />
-                                <h3>Node JS</h3>
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Node JS</p>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/expressjs.svg" alt="Experience icon"
-                            class="icon"
-                            />
-                                <h3>Express JS</h3>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/tech/git.png" alt="Experience icon"
-                            class="icon"
-                            />
-                                <h3>Git</h3>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/tech/python.png" alt="Experience icon"
-                            class="icon"
-                            />
-                                <h3>Python</h3>
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Express JS</p>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/nextjs.svg" alt="Experience icon"
-                            class="icon"
-                            />
-                                <h3>Next JS</h3>
-                        </article>
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Next JS</p>
+                        </article>              
                         <article>
                             <img 
                             src="./assets/tech/jest.svg" alt="Experience icon"
-                            class="icon"
-                            />
-                                <h3>Jest</h3>
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Jest</p>
                         </article>
                         <article>
                             <img 
                             src="./assets/tech/django.png" alt="Experience icon"
-                            class="icon"
-                            />
-                                <h3>Django</h3>
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Django</p>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/tech/axios.png" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Axios</p>
                         </article>
                     </div>
-
+                </div>
+                <div class="details-containers-small">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class = "article-container">
+                        <article>
+                            <img 
+                            src="./assets/tech/javascript3.png" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                        <div>
+                            <p class="bold_text">JavaScript</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/tech/python.png" alt="Experience icon"
+                        class="smallicon margin-right"      />
+                        <div>
+                            <p class="bold_text">Python</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/tech/vba.svg" alt="Experience icon"
+                        class="smallicon margin-right"      />
+                        <div>
+                            <p class="bold_text">Visual Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/tech/Matlab.png" alt="Experience icon"
+                        class="smallicon margin-right"      />
+                        <div>
+                            <p class="bold_text">MATLAB</p>
+                        </div>
+                    </article>
+                    
+                </div>
+                </div>
+                <div class="details-containers-small">
+                    <h2 class="experience-sub-title">Hosting</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/tech/supabase.png" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Supabase</p>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/tech/netlify.png" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Netlify</p>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/tech/render.svg" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Render</p>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/tech/vercel.png" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Vercel</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers-small">
+                    <h2 class="experience-sub-title">Misc</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/tech/rhino.svg" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Rhino</p>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/tech/grasshopper.PNG" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Grasshopper</p>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/tech/git.png" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Git</p>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/tech/excel.svg" alt="Experience icon"
+                            class="smallicon margin-right"      />
+                            <p class="bold_text">Excel</p>
+                        </article>
+                       
+                    </div>
                 </div>
             </div>
         </div>
@@ -267,20 +341,61 @@
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="thumbnail-container">
-                        <img src="./assets/thumbnails/wheretogo.png" alt="Project 1"
-                        class="project-img"
-                        />
-                    </div>
-                    <!-- <h2 class="experience-sub-title project-title">Project One</h2> -->
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AkivaKn/travel_app'"
-                        >
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/KovFLKyPz5Y'"
+                    <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="thumbnail-container">
+                            <img src="./assets/thumbnails/Travel Site.png" alt="Project 1"
+                            class="project-img"
+                            />
+                        </div>
+                        <div class = "btn-container btn-spacing">
+                            <img 
+                            src="./assets/tech/nodejs.png" 
+                            title="Node.js"
+                            alt="Experience icon"
+                            class="smallicon"
+                            />
+                            <img 
+                            src="./assets/tech/javascript3.png" 
+                            title="JavaScript"
+                            alt="Experience icon"
+                            class="smallicon"
+                            />
+                            <img 
+                            src="./assets/tech/react.svg" 
+                            title="React"
+                            alt="Experience icon"
+                            class="smallicon"
+                            />
+                            <img 
+                            src="./assets/tech/postgresql.svg" 
+                            title="PostgreSQL"
+                            alt="Experience icon"
+                            class="smallicon"
+                            /> 
+                            <img 
+                            src="./assets/tech/vercel.png" 
+                            title="Vercel"
+                            alt="Experience icon"
+                            class="smallicon"
+                            />
+                            <img 
+                            src="./assets/tech/tailwind.svg" 
+                            title="Tailwind CSS"
+                            alt="Experience icon"
+                            class="smallicon"                            />
+                            <img
+                        src="./assets/tech/git.png" 
+                        title="Git"
+                        alt="Experience icon"
+                        class="smallicon"                         />
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AkivaKn/travel_app'"
+                            >
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/KovFLKyPz5Y'"
                         >
                         Live Demo
                     </button>
@@ -288,47 +403,211 @@
                     >
                     Full Site
                 </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
+            </div>
+        </div>
+        <div class="details-container color-container">
                     <div class="thumbnail-container">
-                        <img src="./assets/thumbnails/shoparound.png" alt="Project 2"
+                        <img src="./assets/thumbnails/News Site.png" alt="Project 2"
                         class="project-img"
                         />
                     </div>
-                    <!-- <h2 class="experience-sub-title project-title">Project Two</h2> -->
+                    <div class = "btn-container btn-spacing">
+                        <img 
+                        src="./assets/tech/nodejs.png" 
+                        title="Node.js"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/javascript3.png" 
+                        title="JavaScript"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/postgresql.svg" 
+                        title="PostgreSQL"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/axios.png" 
+                        title="Axios"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/react.svg" 
+                        title="React"
+                        alt="Experience icon"
+                        class="smallicon"                        /> 
+                        <img 
+                        src="./assets/tech/expressjs.svg" 
+                        title="Express.js"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/css.svg" 
+                        title="CSS"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/supabase.png" 
+                        title="Supabase"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/render.svg" 
+                        title="Render"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/netlify.png" 
+                        title="Netlify"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/jest.svg" 
+                        title="Jest"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img
+                        src="./assets/tech/git.png" 
+                        title="Git"
+                        alt="Experience icon"
+                        class="smallicon"                         />
+                                
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/JoeMosley96/NC-news'); window.open('https://github.com/JoeMosley96/nc-news-fe')"
+                        >
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://jm-news.netlify.app/'"
+                    >
+                    Full Site
+                </button>
+            </div>
+        </div>
+        <div class="details-container color-container">
+                    <div class="thumbnail-container">
+                        <img src="./assets/thumbnails/Shopping App.png" alt="Project 3"
+                        class="project-img"
+                        />
+                    </div>
+                    <div class="btn-container btn-spacing">
+                        <img 
+                        src="./assets/tech/python.png" 
+                        title="Python"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/django.png" 
+                        title="Django"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/javascript3.png" 
+                        title="JavaScript"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/postgresql.svg" 
+                        title="PostgreSQL"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/supabase.png" 
+                        title="Supabase"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/react.svg" 
+                        title="React Native"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/expo.svg" 
+                        title="Expo"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img
+                        src="./assets/tech/git.png" 
+                        title="Git"
+                        alt="Experience icon"
+                        class="smallicon"                         />
+
+                    </div>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/JoeMosley96/shop-around-be'); window.open('https://github.com/JoeMosley96/shop-around-fe')"
                         >
                         GitHub
                     </button>
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/nH5yu9a7Vho'"
-                        >
-                        Live Demo
-                    </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
+                    >
+                    Live Demo
+                </button>
+            </div>
+        </div>
+        <div class="details-container color-container">
                     <div class="thumbnail-container">
-                        <img src="./assets/thumbnails/soundtests.png" alt="Project 3"
+                        <img src="./assets/thumbnails/Sound Tests.png" alt="Project 4"
                         class="project-img"
                         />
                     </div>
-                    <!-- <h2 class="experience-sub-title project-title">Project Three</h2> -->
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/g9Me1iZ0SQc'"
+                    <div class="btn-container btn-spacing">
+                        <img 
+                        src="./assets/tech/excel.svg" 
+                        title="Excel"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                        <img 
+                        src="./assets/tech/vba.svg" 
+                        title="Visual Basic"
+                        alt="Experience icon"
+                        class="smallicon"                        />
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/g9Me1iZ0SQc'"
                         >
                         Live Demo
                     </button>
-                    </div>
                 </div>
+                
             </div>
+            <div class="details-container color-container">
+                <div class="thumbnail-container">
+                    <img src="./assets/thumbnails/Auditorium Acoustics.png" alt="Project 5"
+                    class="project-img"
+                    />
+                </div>
+                <div class="btn-container btn-spacing">
+                    <img 
+                    src="./assets/tech/rhino.svg" 
+                    title="Rhino"
+                    alt="Experience icon"
+                    class="smallicon"                    />
+                    <img 
+                    src="./assets/tech/grasshopper.PNG" 
+                    title="Grasshopper"
+                    alt="Experience icon"
+                    class="smallicon"                    />
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/DiHjcanwNYg'"
+                    >
+                    Live Demo
+                </button>
+                    <button class="btn btn-color-2 project-btn"  onclick="window.open('./assets/IOA Individual Project.pdf')""
+                    >
+                    Full Report
+                </button>
+            </div>     
+        </div>
+        </div>
         </div>
         <img
             src="./assets/arrow.png"
             alt="Arrow icon"
             class="icon arrow"
             onclick="location.href='./#contact'"
-        />
+            />
     </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
@@ -352,8 +631,8 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <!-- <li><a href="#about">About</a></li> -->
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
